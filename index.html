@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanakanjali Roy | CS Undergrad & Aspiring Developer</title>
+  <meta name="description" content="Portfolio of Kanakanjali Roy - Software Developer specializing in full-stack web development, ML/AI, and open-source contributions. Currently pursuing B.Tech CSE at IIIT Guwahati.">
+  <meta name="keywords" content="Kanakanjali Roy, Software Developer, Web Developer, Full Stack, Machine Learning, IIIT Guwahati">
+  <meta name="author" content="Kanakanjali Roy">
+  <meta property="og:title" content="Kanakanjali Roy | CS Undergrad & Aspiring Developer">
+  <meta property="og:description" content="Software Developer specializing in full-stack web development, ML/AI, and open-source contributions.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Particles Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">KR</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Let's Connect</a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-bg-glow glow-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Open to Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          <span class="greeting">Hey there, I'm</span>
+          <span class="name-gradient">Kanakanjali Roy</span>
+          <span class="typing-wrapper" id="typed-text"></span>
+          <span class="typing-cursor"></span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A <strong>Software Developer</strong> passionate about building scalable web applications, 
+          intelligent ML-powered tools, and contributing to open source. Currently pursuing <strong>B.Tech CSE</strong> 
+          at <strong>IIIT Guwahati</strong>.
+        </p>
+
+        <div class="hero-tech-stack">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">ML/NLP</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-code"></i> View My Work
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/kanakanjali/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kanakanjali-roy-53b328325/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:kanakanjali235@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-container">
+          <div class="photo-frame">
+            <img src="profile.jpeg" alt="Kanakanjali Roy">
+          </div>
+          <div class="photo-decoration deco-1"></div>
+          <div class="photo-decoration deco-2"></div>
+          <div class="floating-badge badge-1">
+            <i class="fas fa-code"></i>&nbsp; Aspiring Developer
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fas fa-brain"></i>&nbsp; ML Enthusiast
+          </div>
+          <div class="floating-badge badge-3">
+            <i class="fab fa-google"></i>&nbsp; Google Ambassador
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-user"></i> About Me</span>
+        <h2 class="section-title">Building the Web, <span class="highlight">One Line at a Time</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm <strong>Kanakanjali Roy</strong>, a pre-final year <strong>Computer Science undergrad at IIIT Guwahati</strong>, 
+            driven by a passion for crafting robust, user-centric software. My journey spans from architecting 
+            <strong>full-stack web applications</strong> with Node.js and MongoDB to building <strong>intelligent ML-powered tools</strong> 
+            that automate real-world developer workflows.
+          </p>
+          <p>
+            As a <strong>Google Student Ambassador</strong>, I bridge the gap between cutting-edge technology and the student 
+            developer community. My open-source contributions through <strong>GirlScript Summer of Code</strong> reflect my 
+            commitment to collaborative development and code quality.
+          </p>
+          <p>
+            I thrive at the intersection of <strong>web engineering and applied AI</strong> - whether it's building sentiment 
+            analysis engines, designing CI/CD pipelines, or training classification models. I'm actively seeking 
+            opportunities to apply my technical skills to enterprise-scale challenges.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-value">3+</div>
+              <div class="stat-label">Production Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">500+</div>
+              <div class="stat-label">DSA Problems</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">10+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">18+</div>
+              <div class="stat-label">Automated Tests</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-details reveal-right">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="detail-info">
+              <h4>Education</h4>
+              <p>B.Tech CSE - IIIT Guwahati (2024 - 2028)</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="detail-info">
+              <h4>Location</h4>
+              <p>India</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="detail-info">
+              <h4>Focus Areas</h4>
+              <p>Full-Stack Web Dev, Machine Learning, DevOps & CI/CD</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fab fa-google"></i></div>
+            <div class="detail-info">
+              <h4>Current Role</h4>
+              <p>Google Student Ambassador | Open Source Contributor</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-heart"></i></div>
+            <div class="detail-info">
+              <h4>Interests</h4>
+              <p>Generative AI, RAG Systems, LangChain, Prompt Engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-cogs"></i> Tech Stack</span>
+        <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+        <p class="section-desc">A curated toolkit spanning web development, machine learning, and modern DevOps - constantly evolving with the industry.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">💻</div>
+            <h3 class="skill-category-title">Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🌐</div>
+            <h3 class="skill-category-title">Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🤖</div>
+            <h3 class="skill-category-title">ML / Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">TF-IDF</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">✨</div>
+            <h3 class="skill-category-title">Generative AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM APIs</span>
+            <span class="skill-tag">LangGraph</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Vector Databases</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🗄️</div>
+            <h3 class="skill-category-title">Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🛠️</div>
+            <h3 class="skill-category-title">Tools & Core</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">OS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-briefcase"></i> Experience</span>
+        <h2 class="section-title">Where I've <span class="highlight">Contributed</span></h2>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="experience-item reveal">
+          <div class="experience-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <div class="experience-role">Google Student Ambassador</div>
+                <div class="experience-company">Google India</div>
+              </div>
+              <span class="experience-date">Jun 2026 - Present</span>
+            </div>
+            <ul class="experience-points">
+              <li>Promote Google's Team Gemini on campus through technical sessions with 50+ participants to drive community engagement.</li>
+              <li>Create and publish educational content on LinkedIn and Instagram to increase awareness of Google AI products among the student developer community.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-item reveal">
+          <div class="experience-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <div class="experience-role">Open Source Contributor</div>
+                <div class="experience-company">GirlScript Summer of Code (GSSoC)</div>
+              </div>
+              <span class="experience-date">May 2026 - Present</span>
+            </div>
+            <ul class="experience-points">
+              <li>Contribute feature enhancements, bug fixes, and documentation to open-source Python and web development repositories, with pull requests merged after maintainer review.</li>
+              <li>Collaborate with maintainers through code reviews and issue discussions to improve code quality, reliability, and functionality.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-rocket"></i> Projects</span>
+        <h2 class="section-title">Things I've <span class="highlight">Built</span></h2>
+        <p class="section-desc">End-to-end applications - from idea to deployment - showcasing full-stack engineering, ML pipelines, and automated workflows.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- OpenDesk -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="opendesk.png" alt="OpenDesk Project Screenshot" loading="lazy">
+            <div class="project-image-overlay"></div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/kanakanjali/opendesk" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://opendesk-b6ot.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <span class="project-icon">📮</span> OpenDesk
+            </h3>
+            <p class="project-description">
+              Full-stack anonymous feedback platform with JWT-authenticated manager dashboard and a custom-built sentiment analysis engine.
+            </p>
+            <ul class="project-highlights">
+              <li>Architected a scalable REST API with Express + MongoDB, featuring JWT auth, bcrypt hashing, rate limiting, and text indexing with pagination.</li>
+              <li>Built custom NLP sentiment engine with negation handling; 18 automated integration tests (Jest) via GitHub Actions CI pipeline.</li>
+              <li>Automated CI/CD workflows using GitHub Actions for streamlined testing and deployment.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="project-tech-tag">Node.js</span>
+              <span class="project-tech-tag">Express.js</span>
+              <span class="project-tech-tag">MongoDB</span>
+              <span class="project-tech-tag">JWT</span>
+              <span class="project-tech-tag">Jest</span>
+              <span class="project-tech-tag">GitHub Actions</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kanakanjali/opendesk" target="_blank" rel="noopener noreferrer" class="project-btn btn-github">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="https://opendesk-b6ot.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-btn btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- OpenSourceAI -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="OpensourceAI.png" alt="OpenSourceAI Project Screenshot" loading="lazy">
+            <div class="project-image-overlay"></div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/kanakanjali/OpenSourceAI" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://opensourceaigit-wzlncnldkmhdvwjyectdmb.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <span class="project-icon">🤖</span> OpenSourceAI
+            </h3>
+            <p class="project-description">
+              ML-powered tool automating GitHub issue classification, duplicate detection, and contributor recommendation using NLP techniques.
+            </p>
+            <ul class="project-highlights">
+              <li>Trained Logistic Regression model on 300 issues using TF-IDF trigrams, balanced class weights, and 5-fold cross-validation.</li>
+              <li>Engineered duplicate detection via cosine similarity and contributor recommendation using GitHub REST API.</li>
+              <li>Deployed on Streamlit Cloud - converting raw data into actionable business insights.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">scikit-learn</span>
+              <span class="project-tech-tag">TF-IDF</span>
+              <span class="project-tech-tag">Streamlit</span>
+              <span class="project-tech-tag">GitHub API</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kanakanjali/OpenSourceAI" target="_blank" rel="noopener noreferrer" class="project-btn btn-github">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="https://opensourceaigit-wzlncnldkmhdvwjyectdmb.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-btn btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CodeTraceAI -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="CodeTraceAI.png" alt="CodeTraceAI Project Screenshot" loading="lazy">
+            <div class="project-image-overlay"></div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/kanakanjali/CodeTraceAI" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://codetraceai.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <span class="project-icon">🔍</span> CodeTraceAI
+            </h3>
+            <p class="project-description">
+              Developer tool that audits AI-assisted coding sessions by tracking file changes, executed commands, and security risks in real time.
+            </p>
+            <ul class="project-highlights">
+              <li>Implemented secret detection using Shannon entropy, regex scanning, SQLite storage, and Git post-commit hooks.</li>
+              <li>Designed interactive risk dashboard with session timeline, rollback previews, report export, and CI integration.</li>
+              <li>Built automated monitoring workflows mirroring enterprise-grade security analytics.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="project-tech-tag">TypeScript</span>
+              <span class="project-tech-tag">Node.js</span>
+              <span class="project-tech-tag">SQLite</span>
+              <span class="project-tech-tag">CLI</span>
+              <span class="project-tech-tag">GitHub Actions</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kanakanjali/CodeTraceAI" target="_blank" rel="noopener noreferrer" class="project-btn btn-github">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="https://codetraceai.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-btn btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Achievements Section -->
+  <section class="section" id="achievements">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-trophy"></i> Achievements</span>
+        <h2 class="section-title">Milestones & <span class="highlight">Recognition</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-content">
+            <h4>Amazon ML Summer School 2026</h4>
+            <p>Shortlisted among the Top 31.8K applicants out of 1.34L+ for the Amazon ML Summer School selection test.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🤖</div>
+          <div class="achievement-content">
+            <h4>IIT Madras Agentic AI Hackathon</h4>
+            <p>Selected among the Top 100 teams in Level 1 of the IIT Madras Agentic AI Hackathon 2026.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🌐</div>
+          <div class="achievement-content">
+            <h4>SheFi Scholar - Season 17</h4>
+            <p>Selected as SheFi Scholar in a global program for women in Web3 and emerging technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-graduation-cap"></i> Education</span>
+        <h2 class="section-title">Academic <span class="highlight">Journey</span></h2>
+      </div>
+
+      <div class="education-cards">
+        <div class="education-card reveal">
+          <div class="edu-icon">🎓</div>
+          <h4>Indian Institute of Information Technology Guwahati</h4>
+          <div class="edu-degree">Bachelor of Technology - Computer Science & Engineering</div>
+          <div class="edu-year">2024 - 2028</div>
+        </div>
+
+        <div class="education-card reveal">
+          <div class="edu-icon">📚</div>
+          <h4>Maynaguri Girls High School, Jalpaiguri</h4>
+          <div class="edu-degree">Higher Secondary (WBCHSE)</div>
+          <div class="edu-score">Score: 88%</div>
+          <div class="edu-year">2023</div>
+        </div>
+
+        <div class="education-card reveal">
+          <div class="edu-icon">📖</div>
+          <h4>Islampur Girls High School, Uttar Dinajpur</h4>
+          <div class="edu-degree">Secondary (WBBSE)</div>
+          <div class="edu-score">Score: 97%</div>
+          <div class="edu-year">2021</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class="fas fa-envelope"></i> Contact</span>
+        <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+      </div>
+
+      <div class="contact-wrapper reveal">
+        <div class="contact-content">
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+            Whether you have a question or just want to say hi - my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:kanakanjali235@gmail.com" class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-card-info">
+              <h4>Email</h4>
+              <p>kanakanjali235@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kanakanjali-roy-53b328325/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-card-info">
+              <h4>LinkedIn</h4>
+              <p>kanakanjali-roy</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/kanakanjali/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-card-info">
+              <h4>GitHub</h4>
+              <p>@kanakanjali</p>
+            </div>
+          </a>
+        </div>
+
+        <a href="mailto:kanakanjali235@gmail.com" class="btn-primary" style="margin: 0 auto; display: inline-flex;">
+          <i class="fas fa-paper-plane"></i> Say Hello!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        Designed & Built with <span class="heart">♥</span> by Kanakanjali Roy © 2026
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/kanakanjali/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanakanjali-roy-53b328325/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kanakanjali235@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
